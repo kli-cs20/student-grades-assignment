@@ -83,7 +83,7 @@ function removeLastGrade() {
 function countBelow50() {
   // Count how many grades are below 50.  Output the result.
   let count = 0;
-  for (let i = 0; i <= grades.length; i++) {
+  for (let i = 0; i < grades.length; i++) {
     if (grades[i] < 50) {
       count++
     }
@@ -94,7 +94,7 @@ function countBelow50() {
 function lowGradesTo50() {
   // Change all grades that are below 50 to be equal to 50.
   outputEl.innerHTML = "Change low grades to 50";
-  for (let i = 0; i <= grades.length; i++) {
+  for (let i = 0; i < grades.length; i++) {
     if (grades[i] < 50) {
       grades[i] = 50;
     }
@@ -104,7 +104,7 @@ function lowGradesTo50() {
 function increaseGradesBy10() {
   // Increase each grade by 10%.
   outputEl.innerHTML = "Increase all grades by 10%";
-  for (let i = 0; i <= grades.length; i++) {
+  for (let i = 0; i < grades.length; i++) {
     grades[i] += 10;
   }
 }
@@ -112,7 +112,7 @@ function increaseGradesBy10() {
 function decreaseGradesBy10() {
   // Decrease each grade by 10%.
   outputEl.innerHTML = "Decrease all grades by 10%";
-  for (let i = 0; i <= grades.length; i++) {
+  for (let i = 0; i < grades.length; i++) {
     grades[i] -= 10;
   }
 }
