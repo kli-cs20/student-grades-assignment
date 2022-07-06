@@ -106,6 +106,9 @@ function increaseGradesBy10() {
   outputEl.innerHTML = "Increase all grades by 10%";
   for (let i = 0; i < grades.length; i++) {
     grades[i] += 10;
+    if (grades[i] > 100) {
+      grades[i] = 100;
+    }
   }
 }
 
@@ -114,6 +117,9 @@ function decreaseGradesBy10() {
   outputEl.innerHTML = "Decrease all grades by 10%";
   for (let i = 0; i < grades.length; i++) {
     grades[i] -= 10;
+    if (grades[i] < 0) {
+      grades[i] = 0;
+    }
   }
 }
 
